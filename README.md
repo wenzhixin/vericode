@@ -14,4 +14,5 @@ jQuery 验证码
 ### 作者
 
 [blog](http://wenzhixin.net.cn)
+
 [wenzhixin2010@gmail.com](wenzhixin2010@gmail.com)
