@@ -13,6 +13,7 @@
 		this.$input = $('<input type="text" maxlength="' + options.length + '"/>');
 		this.$el.append(this.$text).append(this.$input);
 		this.$text.css({
+		    'font-size': options.size + 'px',
 			'cursor': 'pointer'
 		});
 		this.$input.css({
@@ -100,6 +101,7 @@
 	};
 	
 	$.fn.vericode.defaults = {
+	    size: 16,
 		length: 4,
 		focus: false
 	};

@@ -4,12 +4,13 @@ jQuery 验证码
 
 ### 怎么使用
 
-	$('#vericode').vericode({
-		length: 4, //默认长度为 4
+    $('#vericode').vericode({
+        size: 16, //字体，默认为16
+		length: 4, //长度，默认长度为 4
 		focus: false
-	});
-	
-	var result = $('#vericode').vericode('test');//true or false
+    });
+
+    var result = $('#vericode').vericode('test');//true or false
 	
 ### 作者
 
