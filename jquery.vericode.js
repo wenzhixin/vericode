@@ -13,7 +13,7 @@
 		this.$input = $('<input type="text" maxlength="' + options.length + '"/>');
 		this.$el.append(this.$text).append(this.$input);
 		this.$text.css({
-		    'font-size': options.size + 'px',
+			'font-size': options.size + 'px',
 			'cursor': 'pointer'
 		});
 		this.$input.css({
@@ -36,22 +36,22 @@
 		init: function() {
 			var rand = Math.random,
 				number = [],
-		    	color = [],
-		    	bgcolor = [],
-		    	i, c;
-		    for (i = 0; i < this.options.length; i++) {
-		    	number.push(~~(rand() * 10));
-		    }
-		    for (i = 0; i < 3; i++) {
-		    	c = ~~(rand() * 123);
-		    	color.push(c);
-		    	bgcolor.push(255 - c);
-		    } 
-		    this.$text.text(number.join(''))
-		    	.css({
-		    		'color': 'rgb(' + color.join(',') + ')',
-		    		'background-color': 'rgb(' + bgcolor.join(',') + ')'
-		    	});
+				color = [],
+				bgcolor = [],
+				i, c;
+			for (i = 0; i < this.options.length; i++) {
+				number.push(~~(rand() * 10));
+			}
+			for (i = 0; i < 3; i++) {
+				c = ~~(rand() * 123);
+				color.push(c);
+				bgcolor.push(255 - c);
+			}
+			this.$text.text(number.join(''))
+				.css({
+					'color': 'rgb(' + color.join(',') + ')',
+					'background-color': 'rgb(' + bgcolor.join(',') + ')'
+				});
 			if (this.options.focus) {
 				this.$input.focus();
 			}
@@ -101,7 +101,7 @@
 	};
 	
 	$.fn.vericode.defaults = {
-	    size: 16,
+		size: 16,
 		length: 4,
 		focus: false
 	};
